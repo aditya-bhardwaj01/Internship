@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.month-table{
+    height: 80vh;
+    width: 95%;
+    margin: 1em auto;
+}
+
+thead{
+    background-color: #754B75;
+    color: white;
+    font-weight: 400;
+}
+thead tr th{
+    margin: 0;
+    padding: 1em;
+    border-radius: 20px 20px 0 0;
+}
+
+tbody tr{
+    text-align: center;
+}

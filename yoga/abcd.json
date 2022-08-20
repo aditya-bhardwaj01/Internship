@@ -1,0 +1,36 @@
+<?php
+
+if (isset($_COOKIE['shopping_cart'])) {
+  $total = 0;
+  $cart_data = json_decode($_COOKIE['shopping_cart']);
+  foreach ($cart_data as $keys => $values) {
+?>
+    <div class="product">
+      <button class="item-close" onclick="deleteFromCart('<?php echo $values->item_id ?>')"></button>
+
+      <a href="#" class="product-image">
+
+        <img src="<?php echo $values->item_image ?>" alt="">
+
+      </a>
+
+      <div class="product-description">
+
+        <h6 class="product-title"><a href="#"><?php echo $values->item_name ?></a></h6>
+
+        <span class="product-price"> <?php echo $values->item_quantity . 'X' . $values->item_price ?></span>
+
+      </div>
+      <!--/ .product-info -->
+
+    </div>
+
+
+  <?php
+    $total = $total + ((int)$values->item_quantity * (int)$values->item_price);
+  }
+  ?>
+<?php } else {
+  echo 'No product added to cart';
+}
+?>

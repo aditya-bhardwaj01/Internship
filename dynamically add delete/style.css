@@ -1,0 +1,18 @@
+.whole-body{
+    text-align: center;
+    margin-top: 1em;
+}
+
+.detail-form{
+    padding: 1em 2em;
+    margin-left: 4em;
+    text-align: left;
+}
+
+.detail-form input{
+    width: 100%;
+}
+
+.saved-details{
+    padding: 0 3em;
+}

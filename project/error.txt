@@ -1,0 +1,1 @@
+2022-06-11 11:14:42 ERROR : [URL:http://localhost/ideal_village/project/fetch_add_teacher.php]  [SQL:]

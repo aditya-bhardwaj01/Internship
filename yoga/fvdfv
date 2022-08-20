@@ -1,0 +1,12 @@
+function deleteFromCart(itemId) {
+        $.ajax({
+          url: "delete_from_cart.php",
+          type: 'POST',
+          data: {
+            id: itemId
+          },
+          success: function(response){
+            alert("Removed from cart");
+          }
+        });
+      }
